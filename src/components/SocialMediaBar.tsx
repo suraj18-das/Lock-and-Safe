@@ -1,5 +1,4 @@
-import React from 'react';
-import { Facebook, Instagram, Twitter, Linkedin, MessageCircle } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Linkedin, } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { FaWhatsapp } from "react-icons/fa";
 
