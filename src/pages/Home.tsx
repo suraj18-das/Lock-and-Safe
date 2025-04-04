@@ -59,8 +59,8 @@ export default function Home() {
   }, []);
 
   const images = [
-    "src\\components\\assets\\security-min.png?auto=format&fit=crop&q=80",
-    "src\\components\\assets\\Housekeeping-1-1024x918-min.png?auto=format&fit=crop&q=80",
+    "../components/assets/security-min.png?auto=format&fit=crop&q=80",
+    "../components/assets/Housekeeping-1-1024x918-min.png?auto=format&fit=crop&q=80",
   ];
 
   // State for animated numbers
