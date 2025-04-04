@@ -3,6 +3,8 @@ import { Shield, Users, Home as HomeIcon, Clock } from "lucide-react";
 const OurClientele = lazy(() => import("../components/ui/OurClientele"));
 const Testimonials = lazy(() => import("../components/ui/Testimonials"));
 import Banner from "../components/assets/Banner_HOME.png";
+import security from "../components/assets/security-min.png";
+import Housekeeping from "../components/assets/Housekeeping-1-1024x918-min.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
@@ -58,9 +60,8 @@ export default function Home() {
     return () => clearInterval(cursorInterval);
   }, []);
 
-  const images = [
-    "../components/assets/security-min.png?auto=format&fit=crop&q=80",
-    "../components/assets/Housekeeping-1-1024x918-min.png?auto=format&fit=crop&q=80",
+  const images = [security,
+    Housekeeping
   ];
 
   // State for animated numbers
