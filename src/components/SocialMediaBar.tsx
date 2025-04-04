@@ -8,11 +8,11 @@ const SocialMediaBar = () => {
   const whatsappNumber = '91XXXXXXXXXX'; // Example: '919876543210'
 
   const socialLinks = [
-    { icon: Facebook, url: 'https://facebook.com', label: 'Facebook' },
-    { icon: Instagram, url: 'https://instagram.com', label: 'Instagram' },
-    { icon: Twitter, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: Linkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FaWhatsapp, url: `https://wa.me/${whatsappNumber}`, label: 'WhatsApp' },
+    { icon: Facebook, url: '#', label: 'Facebook' },
+    { icon: Instagram, url: '#', label: 'Instagram' },
+    { icon: Twitter, url: '#', label: 'Twitter' },
+    { icon: Linkedin, url: '#', label: 'LinkedIn' },
+    { icon: FaWhatsapp, url: `#`, label: 'WhatsApp' }, //https://wa.me/${whatsappNumber}
   ];
 
   return (
@@ -40,7 +40,7 @@ const SocialMediaBar = () => {
           <motion.a
             key={index}
             href={link.url}
-            target="_blank"
+            // target="_blank"
             rel="noopener noreferrer"
             aria-label={link.label}
             className="flex items-center justify-center p-3 rounded-full text-white"

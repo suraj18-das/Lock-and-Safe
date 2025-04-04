@@ -69,7 +69,7 @@ export default function Contact() {
             {[
               {
                 icon: Phone,
-                text: "+1 (555) 123-4567",
+                text: "+91 7003606298",
                 label: "Phone",
               },
               {
@@ -97,22 +97,6 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Buttons for Client and Staff */}
-      {/* <div className="flex justify-center gap-8 py-8">
-        <button
-          className={buttonStyle("client")}
-          onClick={() => handleButtonClick("client")}
-        >
-          Client Inquiry
-        </button>
-        <button
-          className={buttonStyle("staff")}
-          onClick={() => handleButtonClick("staff")}
-        >
-          Join as Staff
-        </button>
-      </div> */}
-
       <div className="min-h-[80vh] md:min-h-[50vh] bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-40">
         {(activeButton === null || activeButton === "client") && (
           <ClientButton
@@ -132,21 +116,6 @@ export default function Contact() {
           />
         )}
       </div>
-
-      {/* Form Section */}
-      {/* <div
-        ref={formSectionRef} // Reference to the form section
-        className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-8 py-16"
-      >
-        <div
-          className={`transition-transform duration-500 ${
-            activeForm ? "scale-100 opacity-100" : "scale-0 opacity-0"
-          } bg-white p-2 sm:p-6 rounded-lg shadow-xl`}
-        >
-          {activeForm === "client" && <ClientContactForm />}
-          {activeForm === "staff" && <StaffContactForm />}
-        </div>
-      </div> */}
 
       {/* Map Section */}
       <FadeInView delay={0.6}>

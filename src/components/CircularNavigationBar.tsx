@@ -11,11 +11,11 @@ const CircularMenu = () => {
   const whatsappNumber = '91XXXXXXXXXX'; // Example: '919876543210'
 
   const menuItems = [
-    { icon: Facebook, url: 'https://facebook.com', label: 'Facebook' },
-    { icon: Instagram, url: 'https://instagram.com', label: 'Instagram' },
-    { icon: Twitter, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: Linkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FaWhatsapp, url: `https://wa.me/${whatsappNumber}`, label: 'WhatsApp' }
+    { icon: Facebook, url: '#', label: 'Facebook' }, //https://facebook.com
+    { icon: Instagram, url: '#', label: 'Instagram' }, //https://instagram.com
+    { icon: Twitter, url: '#', label: 'Twitter' }, //https://twitter.com
+    { icon: Linkedin, url: '#', label: 'LinkedIn' }, //https://linkedin.com
+    { icon: FaWhatsapp, url: `#`, label: 'WhatsApp' } //https://wa.me/${whatsappNumber}
   ];
 
   const toggleMenu = () => {

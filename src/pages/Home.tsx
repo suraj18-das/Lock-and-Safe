@@ -3,9 +3,11 @@ import { Shield, Users, Home as HomeIcon, Clock } from "lucide-react";
 const OurClientele = lazy(() => import("../components/ui/OurClientele"));
 const Testimonials = lazy(() => import("../components/ui/Testimonials"));
 import Banner from "../components/assets/Banner_HOME.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const navigate=useNavigate();
 
   // Dynamic Taglines
   const taglines = [
@@ -135,7 +137,7 @@ export default function Home() {
                 Professional security and facility services tailored to your
                 needs. Protecting what matters most, 24/7.
               </p>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-200">
+              <button onClick={()=>navigate("/contact")} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-200">
                 Get Started
               </button>
             </div>
